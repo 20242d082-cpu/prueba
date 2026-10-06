@@ -1,0 +1,69 @@
+
+LAB1-PC03@LAB1-PC03 UCRT64 ~/Desktop/proyecto
+$ git init
+Initialized empty Git repository in C:/Users/LAB2-PC03/Desktop/proyecto/.git/
+
+LAB1-PC03@LAB1-PC03 UCRT64 ~/Desktop/proyecto (main)
+$ git add .
+
+LAB1-PC03@LAB1-PC03 UCRT64 ~/Desktop/proyecto (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+
+
+LAB1-PC03@LAB1-PC03 UCRT64 ~/Desktop/proyecto (main)
+$ git config --global user.name "20242d082-cpu"
+
+LAB1-PC03@LAB1-PC03 UCRT64 ~/Desktop/proyecto (main)
+$ git config --global user.email "20242d082@khipu.edu.pe"
+
+LAB1-PC03@LAB1-PC03 UCRT64 ~/Desktop/proyecto (main)
+$ git commit -m "Version 1"
+[main (root-commit) 6619199] Version 1
+ 1 file changed, 13 insertions(+)
+ create mode 100644 index.html
+
+LAB1-PC03@LAB1-PC03 UCRT64 ~/Desktop/proyecto (main)
+$ git branch -M main
+
+LAB1-PC03@LAB1-PC03 UCRT64 ~/Desktop/proyecto (main)
+$ git remote add origin https://github.com/20242d082-cpu/prueba.git~
+
+LAB1-PC03@LAB1-PC03 UCRT64 ~/Desktop/proyecto (main)
+$ git push -u origin main
+remote: Repository not found.
+fatal: repository 'https://github.com/20242d082-cpu/prueba.git~/' not found
+
+LAB1-PC03@LAB1-PC03 UCRT64 ~/Desktop/proyecto (main)
+$ git remote add origin https://github.com/20242d082-cpu/prueba.git
+error: remote origin already exists.
+
+LAB1-PC03@LAB1-PC03 UCRT64 ~/Desktop/proyecto (main)
+$ git push -u origin main
+remote: Repository not found.
+fatal: repository 'https://github.com/20242d082-cpu/prueba.git~/' not found
+
+LAB1-PC03@LAB1-PC03 UCRT64 ~/Desktop/proyecto (main)
+$ git remote set-url origin https://github.com/20242d082-cpu/prueba.git
+
+LAB1-PC03@LAB1-PC03 UCRT64 ~/Desktop/proyecto (main)
+$ git push -u origin main
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 398 bytes | 398.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/20242d082-cpu/prueba.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+LAB1-PC03@LAB1-PC03 UCRT64 ~/Desktop/proyecto (main)
+$
